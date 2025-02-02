@@ -1,0 +1,99 @@
+// your code goes here
+n= 5;
+for( let n = 5; n <=5; n++){
+    print9(n);
+
+}
+
+function print1(n){
+    for( let i = 0; i < n; i++){
+           let pattern = '';
+           let space = '';
+         for( let j = 0; j < n; j++){
+             pattern += '*';
+         }
+         console.log(pattern)
+    }
+}
+function print2(n){
+    for( let i = 0; i < n; i++){
+           let pattern = '';
+           let space = '';
+         for( let j = 0; j < i; j++){
+             pattern += '*';
+         }
+         console.log(pattern)
+    }
+}
+function print3(n){
+    for( let i = 0; i < n; i++){
+           let pattern = '';
+           let space = '';
+         for( let j = 0; j < i; j++){
+             pattern += '*';
+         }
+         console.log(pattern)
+    }
+}
+function print4(n){
+    for( let i = 1; i <= n; i++){
+           let pattern = '';
+           let space = '';
+         for( let j = 1; j <= i; j++){
+             pattern += ''+i;
+         }
+         console.log(pattern)
+    }
+}
+function print5(n){
+    for( let i = 1; i <= n; i++){
+           let pattern = '';
+           let space = '';
+         for( let j = 1; j <= i; j++){
+             pattern += ''+j;
+         }
+         console.log(pattern)
+    }
+}
+function print6(n){
+    for( let i = 0; i < n; i++){
+           let pattern = '';
+           let space = '';
+         for( let j = 0; j <n-i; j++){
+             pattern += '*';
+         }
+         console.log(pattern)
+    }
+}
+function print7(n){
+    for( let i = 0; i < n; i++){
+           let pattern = '';
+           let space = '';
+         for( let j = 0; j <n-i-1; j++){
+             space += ' ';
+         }
+         for( let j = 0; j < 2 * i + 1; j++){
+             pattern += '*';
+         }
+         console.log(space + pattern)
+    }
+}
+function print8(n){
+    for( let i = 0; i < n; i++){
+           let pattern = '';
+           let space = '';
+         for( let j = 0; j < i; j++){
+             space += ' ';
+         }
+         for( let j = 0; j < 2*(n -i)-1; j++ ){
+             pattern += '*';
+         }
+
+         console.log(space + pattern )
+          
+    }
+}
+function print9(n){
+    print7(n);
+    print8(n);
+}
